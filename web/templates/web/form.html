@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/neco.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+</head>
+<body>
+        <nav id="bar">
+                <div class="logo">
+                    <img src="/img/navimg.png" alt="">
+                </div>
+                <div class="ne2">
+                <ul class="menu">
+                    <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="web#who">Gameplay </a></li>
+                    <li><a href="web#why">Historie </a></li>
+                    <li><a href="web#when">Součastnost</a></li>
+                    <li><a href="form">nějaky formulář</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="tri">
+            <div class="velikost">
+                <div class="stylos">
+                    <div class="form-items">
+                        <h2 class="a-heading">Přihlaste se </h2>
+                        <form>
+                            <div class="py-3">
+                                <div>
+                                <label class="label-form">jmeno a Příjmení : </label>
+                                <input type="text" name="name" required>
+                                </div>
+                                <div>
+                                <label class="label-form">Heslo : </label>
+                                <input type="password" name="Heslo" required>
+                                </div>
+                                <div>
+                                 <label class="label-form">E-mail : </label>
+                                <input type="email" name="email" required>
+                                </div>
+        
+                                <div>
+                                    <label class="label-form">Chcete obdržen novinky na E-mail</label>
+                                    <select class="form-select" required>
+                                        <option value="">Ano</option>
+                                        <option value="">Ne</option>
+                                    </select>
+                                </div>
+        
+                                <div class="radio">
+                                    <label class="a-heading">Pohlaví : </label>
+                                    <input type="radio" class="btn btn-form" name="pohlaví" id="Muž">
+                                    <label class="btn btn-form" for="Muž" >Muž</label>
+                                    <input type="radio" class="btn btn-form" name="pohlaví" id="Žena">
+                                    <label class="btn btn-form" for="Žena">Žena</label>
+                                    <input type="radio" class="btn btn-form" name="pohlaví" id="jiné">
+                                    <label class="btn btn-form" for="jiné">Jiné</label>
+                                </div>
+                                <div class="py-3">
+                                    <button id="submit" type="submit" class="btn">Odeslat</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>   
+         
+</body>
+</html>
