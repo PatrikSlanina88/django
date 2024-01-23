@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+    .conatiner{
+        width: 100%;
+
+    }
+    .logo{
+        display: none;
+    }
+}
+:root{
+    --primary-color: rgb(233, 154, 59);
+    --secondary-color: rgb(131, 131, 131);
+    --third-color:white;
+    --fourth-color:  rgb(200, 200, 200)
+}
+html {
+    scroll-behavior: smooth;
+}
+  
+.text-primary{
+    color: var(--primary-color);
+}
+.text-secondary{
+    color: var(--secondary-color);
+}
+.logo{
+    height: 100%;
+    padding-left: 30px;
+    
+}
+.logo img{
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+
+
+}
+.ne{
+    display: flex;
+    float: right;
+    padding-right: 10%;
+    
+    
+
+}
+.ne a{
+    color: var(--third-color);
+    border-radius: 5px;
+    
+}
+#bar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+#bar a{
+    text-decoration: none;
+    text-wrap: left;
+}
+#bar ul {
+    display: flex;
+    list-style: none; 
+    align-items: center ;
+    padding-left: 30%;
+    
+    
+}
+#bar ul li {
+    padding:  0.75rem;
+    margin: 0.25rem;
+   
+}
+#bar ul li :hover{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}   
+#showcase{
+    background: #333 url('../img/cs2.jpg') no-repeat center center/cover;
+    height: 100vh; 
+    color: #ffffff; 
+    
+} 
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(0,0, 0, 43%);
+}
+.prostred{
+    padding-top: 50px;
+}
+.l-heading{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1rem ;
+}
+.lead{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 7px;
+    
+}
+.btn:hover{
+    background-color: rgb(255, 98, 0);
+    
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+}
+.text-center{
+    text-align: center;
+}
+.a-heading{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-wrap:wrap;
+}
+.py-1{
+    padding: 1.5rem 0;
+}
+.py-2{
+     padding: 2rem;       
+}
+.py-3{
+    padding-top: 1rem;
+}
+.list{
+    margin: 0.5rem 0;
+    list-style: none    ;
+}
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #333 dotted 1px;
+}
+#dva{
+    background-color: var(--fourth-color);
+}
+#what{
+    background-color: var(--fourth-color);
+    padding-top: 10rem;
+}
+#what .items{
+    display: flex ;
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+#what .item{
+    text-align: center;
+    padding: 0rem;
+    
+}
+#what .items .item .pistolero i{
+    background-color: var(--primary-color);
+    padding:2rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    color: black;
+    
+    
+    
+}
+#what .items .item .pistolero :hover {
+    background-color: rgb(255, 98, 0);
+    text-decoration: none;
+    border-radius: 50%;
+}
+.bg-light{
+    background: white;
+    color: black;
+}
+.bg-dark{
+    background: black;
+    color: white;
+}
+#who{
+    display: flex;
+    
+    padding-top: 15rem;
+}
+#who div{
+    flex: 2;
+    justify-content: space-between;
+    background-color:var(--fourth-color);  
+}
+#who .who-img{
+    max-width: 500px;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background: #333 url(../img/nevím.jpeg)no-repeat center center/cover;   
+}
+#why{
+    display: flex;
+    padding-top: 20rem;
+}
+#why div{
+    flex: 2;
+    justify-content: space-between;
+    background-color:var(--fourth-color);
+    
+}
+#why .why-img{
+    max-width: 500px;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background: #333 url(../img/cs1.6.jpg)no-repeat center center/cover;   
+}
+#when{
+    display: flex;
+    padding-top: 20rem;
+}
+#when div{
+    flex: 2;
+    justify-content: space-between;
+    background-color:var(--fourth-color);
+    
+}
+#when .when-img{
+    max-width: 500px;
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    background: #333 url(../img/Soucastnost.jpg)no-repeat center center/cover;   
+}
+#zdroje{
+    background-color: var(--fourth-color);
+}
+#tri{
+    background-color: var(--third-color);
+}
+.label-form{
+    color: var(--primary-color);
+    text-align: left;
+    font-size: 1.5rem;
+}
+.ne2{
+    display: flex;
+    float: right;
+    padding-right: 10%;
+    
+    
+
+}
+.ne2 a{
+    color: var(--third-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    
+}

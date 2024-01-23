@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter-strike</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <link rel='stylesheet' href="{% static 'css/neco.css' %}">
+</head>
+<body>
+    <section id="home">
+        <nav id="bar">
+                <div class="logo">
+                    <img src="/img/navimg.png" alt="">
+                </div>
+                <div class="ne">
+                    <ul class="menu">
+                        <li><a href="#home"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="#who">Gameplay </a></li>
+                        <li><a href="#why">Historie </a></li>
+                        <li><a href="#when">Součastnost</a></li>
+                        <li><a href="form.html">nějaky formulář</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </section>
+        <div id="showcase">
+            <div class="showcase-content">
+                <h1 class="l-heading">Informace o hře</h1>
+                <p class="lead">něco</p>
+                <a href="#what" class="btn">něco</a>
+            </div>
+        </div>
+    
+        <section id="what">
+            <div class="container">
+                <div class="items">
+                    <div class="item">
+                        <div class="pistolero">
+                        <a href="#who"><i class="fas fa-person-rifle fa-2x"></i></a>
+                        </div>
+                        <div>
+                            <h3>Gameplay</h3>
+                        </div>
+        
+                    </div>
+                    <div class="item">
+                        <div class="pistolero">
+                        <a href="#why"><i class="fas fa-clock-rotate-left fa-2x"></i></a>
+                        </div>
+                        <div>
+                            <h3>Historie</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pistolero">
+                        <a href="#when"><i class="fas fa-calendar-check fa-2x"></i></a>
+                        </div>
+                        <div>
+                            <h3>Součastnost</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="dva">
+            <section id="who">
+        
+                <div class="who-img"></div>
+                <div class="who-text bg-light p-2 prostred">
+                    <h2 class="a-heading">Gameplay</h2>
+                    <ul class="list">
+                            <li><h2>Counter-Strike je online kompetitivní fps hra která se hraje 5vs5, hrajeme za 2 strany jedna jsou
+                                teroristi a druhá je policie. Hraje se do 13 Vítězných kol po prvních 12 kolech se mění strany. Za teroristy můžeme vyhrát kolo tím že se nám
+                                podaří položit bombu která za 40 sekund vybuchne nebo tím že zabijeme všechny policisty, naopak za policisty musíme dane "sity" ochránit před
+                                položením bomby když se to nepovede tak se bomba ještě muže zneškodnit. Zneškodnění bomby trvá 10 sekund popřípadě 5 pokud máme koupený "defuse kit", kolo také můžeme vyhrát tím že zabijeme všechny teroristy před položení bomby nebo když teroristům vyprší čas.</h2></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="why">
+        
+                <div class="why-img"></div>
+                <div class="why-text bg-light p-2 prostred">
+                    <h2 class="a-heading">Historie</h2>
+                    <ul class="list">
+                            <li><h2>CS vznikl jako modifikace hry Half-Life od společnosti Valve Corporation. Dnes je dostupný v několika
+                                plných i neplných verzích. Zatímco verze 1.5 a 1.6 jsou vytvořené na enginu hry Half-Life, pokračování
+                                Counter-Strike: Source a Counter-Strike: Global Offensive běží na Source enginu hry Half-Life 2. K dispozici je i
+                                verze Counter-Strike: Condition Zero, což je v podstatě vylepšená verze 1.6 rozšířená o hru pro jednoho hráče. V roce 2008
+                                vydala společnost Nexon Corporation hru Counter Strike Online, která je určená primárně pro asijský trh, běží na verzi Condition Zero a využívá systém mikroplateb.</h2></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="when">
+        
+                <div class="when-img"></div>
+                <div class="when-text bg-light p-2 prostred">
+                    <h2 class="a-heading">Součastnost</h2>
+                    <ul class="list">
+                            <li><h2>Před měsícem vyšla nova verze counter-strike 2 ve které se o proti counter-strike Global:Offensive změnila grafika díky tomu že se
+                                hra předělala na nový engine "Source engine 2", také se změnila funkce dýmovnic. Counter-Strike 2 byl jako bezplatný update
+                                do předešle hry změnil se také rank systém který je teďka dělán formou hodnocení ela. </h2></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <section id="zdroje">
+                <div class="container">
+                    <h2 class="a-heading text-center">zdroje</h2>
+                    <a href="https://www.counter-strike.net/cs2" target="_blank">officialní Counter-Strike 2 stranka<br></a>
+                    <a href="https://cs.wikipedia.org/wiki/Counter-Strike" target="_blank">counter-strike Wiki</a><br>
+                </div>
+            </section>
+        
+        <footer id="footer" class="bg-dark text-center py-1">
+        <div class="container">
+            &copy; 2023
+        </div>
+        </footer>
+
+</body>
+</html>
