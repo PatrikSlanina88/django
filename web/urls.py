@@ -4,5 +4,5 @@ from web import views
 
 urlpatterns = [
     path("", views.index, name="index"),
-     path('form',views.form, name='form'),
+    path('form',views.form, name='form'),
     ]
